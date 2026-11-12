@@ -1,4 +1,4 @@
-package com.example.aplicatie_seminar_5;
+package ase.laborator5;
 
 import org.junit.Test;
 

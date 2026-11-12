@@ -1,4 +1,4 @@
-package com.example.aplicatie_seminar_5;
+package ase.laborator5;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.aplicatie_seminar_5", appContext.getPackageName());
+        assertEquals("ase.laborator5", appContext.getPackageName());
     }
 }

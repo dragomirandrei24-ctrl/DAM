@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Aplicatie_Seminar_5</string>
+    <string name="app_name">Laborator 5</string>
+    <string name="ram">RAM</string>
+    <string name="storage">Storage</string>
+    <string name="manufacture">Manufacture</string>
+    <string name="touchscreen">Touchscreen</string>
+    <string name="add_computer">Add computer</string>
+    <string name="purchace_date">Purchace Date</string>
+    <string name="optiuni_extra">Optiuni Extra</string>
+    <string name="tastatura_iluminata">Tastatura iluminata</string>
+    <string name="webcam">Webcam</string>
+    <string name="mouse_wireless">Mouse wireless</string>
+    <string name="monitor">Monitor</string>
 </resources>

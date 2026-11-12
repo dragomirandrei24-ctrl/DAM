@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddComputerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp">
+
+            <EditText
+                android:id="@+id/ramEditText_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="@string/ram"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/storageEditText_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="@string/storage"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ramEditText_AddComputer" />
+
+            <EditText
+                android:id="@+id/manufactureEditText_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="@string/manufacture"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/storageEditText_AddComputer" />
+
+            <EditText
+                android:id="@+id/purchaceDateEditText_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/manufactureEditText_AddComputer" />
+
+            <CheckBox
+                android:id="@+id/touchscreenCheckBox_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="@string/touchscreen"
+                app:layout_constraintStart_toStartOf="@+id/purchaceDateEditText_AddComputer"
+                app:layout_constraintTop_toBottomOf="@+id/purchaceDateEditText_AddComputer" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/purchace_date"
+                app:layout_constraintStart_toStartOf="@+id/purchaceDateCalendarView_AddComputer"
+                app:layout_constraintTop_toBottomOf="@+id/touchscreenCheckBox_AddComputer" />
+
+            <CalendarView
+                android:id="@+id/purchaceDateCalendarView_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/optiuniExtraLabel_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/optiuni_extra"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/purchaceDateCalendarView_AddComputer"
+                app:layout_constraintTop_toBottomOf="@+id/purchaceDateCalendarView_AddComputer" />
+
+            <CheckBox
+                android:id="@+id/cbTastaturaIluminata_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tastatura_iluminata"
+                app:layout_constraintStart_toStartOf="@+id/optiuniExtraLabel_AddComputer"
+                app:layout_constraintTop_toBottomOf="@+id/optiuniExtraLabel_AddComputer" />
+
+            <CheckBox
+                android:id="@+id/cbWebcam_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/webcam"
+                app:layout_constraintStart_toStartOf="@+id/cbTastaturaIluminata_AddComputer"
+                app:layout_constraintTop_toBottomOf="@+id/cbTastaturaIluminata_AddComputer" />
+
+            <CheckBox
+                android:id="@+id/cbMouseWireless_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/mouse_wireless"
+                app:layout_constraintStart_toStartOf="@+id/cbWebcam_AddComputer"
+                app:layout_constraintTop_toBottomOf="@+id/cbWebcam_AddComputer" />
+
+            <CheckBox
+                android:id="@+id/cbMonitor_AddComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/monitor"
+                app:layout_constraintStart_toStartOf="@+id/cbMouseWireless_AddComputer"
+                app:layout_constraintTop_toBottomOf="@+id/cbMouseWireless_AddComputer" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/add_computer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cbMonitor_AddComputer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

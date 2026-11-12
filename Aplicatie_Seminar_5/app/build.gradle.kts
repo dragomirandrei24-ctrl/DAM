@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.aplicatie_seminar_5"
+    namespace = "ase.laborator5"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.aplicatie_seminar_5"
+        applicationId = "ase.laborator5"
         minSdk = 27
         targetSdk = 37
         versionCode = 1
@@ -21,8 +21,7 @@ android {
     buildTypes {
         release {
             optimization {
-                enable = true
-                packageScope = setOf("androidx.**", "kotlin.**", "kotlinx.**")
+                enable = false
             }
         }
     }
@@ -33,6 +32,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.cardview)
+    implementation(libs.recyclerview)
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)
     implementation(libs.constraintlayout)

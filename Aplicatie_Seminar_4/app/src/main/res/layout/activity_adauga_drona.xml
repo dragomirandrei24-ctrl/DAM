@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DRONA"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 1. EditText: Model (String) -->
+        <EditText
+            android:id="@+id/etModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Model dronă (ex: DJI Mavic 3)"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 2. EditText: Autonomie în minute (int) -->
+        <EditText
+            android:id="@+id/etAutonomie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autonomie zbor (minute, ex: 45)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 3. Switch: Are cameră 4K? (boolean) -->
+        <Switch
+            android:id="@+id/swCamera4K"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Are cameră 4K?"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 4. RadioGroup + RadioButtons: Tip Control -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip control:"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rbTelecomanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telecomandă"
+                android:checked="true"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/rbTelefon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplicație Telefon" />
+        </RadioGroup>
+
+        <!-- 5. Spinner: Categorie Dronă (enum) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categorie dronă:"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spCategorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 6. RatingBar: Rating performanță (float) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating performanță:"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/rbPerformanta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="4.0"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 7. CheckBox-uri: Opțiuni extra (String[]) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opțiuni extra:"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS Return-to-Home" />
+
+        <CheckBox
+            android:id="@+id/cbSenzori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senzori evitare obstacole" />
+
+        <CheckBox
+            android:id="@+id/cbFollowMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mod Follow-Me"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Buton Salvare -->
+        <Button
+            android:id="@+id/btnSalveaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SALVEAZA" />
+
+    </LinearLayout>
+</ScrollView>
