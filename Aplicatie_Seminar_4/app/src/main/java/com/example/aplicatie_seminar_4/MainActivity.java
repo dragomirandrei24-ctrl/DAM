@@ -22,4 +22,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-git remote set-url origin

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Laborator Layout</string>
+    <string name="hint_introduceti_text">Introduceți textul aici...</string>
+    <string name="text_switch_confirmare">Confirm activarea butonului</string>
+    <string name="text_buton_actualizeaza">Actualizează Textul</string>
+    <string name="text_initial_textview">Textul afișat va apărea aici.</string>
+    <string name="eroare_camp_gol">Acest câmp nu poate fi gol!</string>
+    <string name="toast_confirmare">Textul a fost actualizat cu succes!</string>
+</resources>
