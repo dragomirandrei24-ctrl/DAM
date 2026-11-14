@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Practia</string>
+    <string-array name="optiunui_splinter">
+        <item>In Ear</item>
+        <item>On Ear</item>
+        <item>Over Ear</item>
+    </string-array>
+</resources>
